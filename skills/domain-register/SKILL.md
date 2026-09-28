@@ -1,11 +1,13 @@
 ---
 name: domain-register
-description: Register a domain autonomously on Headless Domains using Machine Payments Protocol (MPP) with pathUSD or Gems.
+description: Register a domain on HeadlessDomains.com using MPP or GFA Gems after checking the live namespace capabilities and payment networks.
 ---
 
 # Domain Register
 
-This skill allows an AI agent to autonomously register a domain using Machine Payments Protocol (MPP).
+This skill describes the standard MPP and GFA Gems registration route. Payment methods and networks vary by namespace and runtime readiness. Read `GET /api/v1/domains/capabilities`, obtain a current quote, and follow the returned payment challenge rather than assuming a network is available.
+
+Native namespaces also expose a separate `POST /api/v1/x402/domains/register` route for Base USDC when the x402 route is operational. Partner namespaces use the standard registration route and provider preflight; they do not use the dedicated x402 route.
 
 ## Usage
 

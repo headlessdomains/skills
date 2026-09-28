@@ -1,7 +1,7 @@
 {
   "name": "headlessdomains/skills",
   "version": "1.0.0",
-  "description": "Agentic SEO and machine-discoverability for Headless Domains",
+  "description": "Search, registration, lookup, and profile skills for HeadlessDomains.com namespaces",
   "author": "headlessdomains",
   "url": "https://headlessdomains.com",
   "skills": {
