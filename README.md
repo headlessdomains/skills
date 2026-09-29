@@ -37,10 +37,16 @@ The HeadlessDomains.com catalog and public capability register currently list th
 
 ## Available Skills
 
-1. **`domain-search`**: Check whether a specific name is available across supported namespaces.
-2. **`domain-lookup`**: Retrieve public profile information, active capabilities, and agentic commerce storefront details for a given domain.
-3. **`domain-register`**: Register a domain using MPP or GFA Gems. Supported networks and payment routes vary by namespace and current operator readiness; inspect the capability register first. Native namespaces also expose a separate x402 v2 route for Base USDC when that route is operational.
-4. **`bio-sync`**: Synchronize or update the decentralized bio/profile for a specific domain.
+1. **`domain-search`**: Search a candidate name across supported namespaces, then check current capability and quote data before registration.
+2. **`domain-lookup`**: Inspect public identity, profile, manifest, and available commerce metadata for a registered name.
+3. **`domain-register`**: Register through an authorized MPP flow, or GFA Gems where the agent API supports it, after live preflight. Supported native namespaces also expose a separate x402 v2 registration route for Base USDC when operational; partner agent registration uses standard MPP and provider preflight.
+4. **`bio-sync`**: Update an owned or managed domain's hns.bio profile with authenticated API access.
+
+## Current agent documentation
+
+These repository skills are concise entry points. The [site Markdown index](https://headlessdomains.com/llms.txt) and [agent quick start](https://headlessdomains.com/agent-start.md) point to the current HeadlessDomains.com guides. Read the [live capability register](https://headlessdomains.com/api/v1/domains/capabilities) for the selected namespace before relying on a payment method or network.
+
+Site guides: [primary skill](https://headlessdomains.com/skill.md), [authentication](https://headlessdomains.com/auth.md), [MPP](https://headlessdomains.com/skill_mpp.md), [GFA Gems](https://headlessdomains.com/skill_gems.md), [native x402](https://headlessdomains.com/skill_x402.md), [profile](https://headlessdomains.com/skill_profile.md), [Handshake DNS](https://headlessdomains.com/skill_hns.md), [domain actions](https://headlessdomains.com/skill_actions.md), [agent claiming](https://headlessdomains.com/skill_claimagent.md), [transfer](https://headlessdomains.com/skill_transfer.md), [marketplace](https://headlessdomains.com/skill_marketplace.md), [BMOS](https://headlessdomains.com/skill_bmos.md), [trademark claims](https://headlessdomains.com/skill_trademarkclaim.md), [runtime](https://headlessdomains.com/skill_runtime.md), and [inbox](https://headlessdomains.com/skill_inbox.md). The website guides and API contracts define current route behavior; the four installable GitHub skills summarize them.
 
 ## Installation
 
